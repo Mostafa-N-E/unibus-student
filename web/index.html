@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="rajaee_web_app">
+
+  <!-------------------------------- added -------------------------------->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="assets/styles.css">
+<!--  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">-->
+  <base href="/">
+  <meta name="theme-color" content="#09619f">
+  <!-------------------------------- end added -------------------------------->
+
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Uni Student</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = null;
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+</head>
+<body>
+<!-------------------------------- added -------------------------------->
+<!--------------------------  1  ------------------------->
+<!--  <div style="text-align: center; position: absolute; top: 40%; width: 100%">-->
+<!--    <center>-->
+<!--      <p style="font-weight: bolder;">Carregando o catálogo...</p>-->
+<!--      <p>Na primeira execução, isso pode demorar cerca de 20 a 30 segundos.<br/>Seja paciente! ;-)</p>-->
+<!--    </center>-->
+<!--  </div>-->
+<!--  <div class="spinner">-->
+<!--    <p style="font-weight: bolder;">Carregando o catálogo...</p>-->
+<!--  </div>-->
+
+<!--------------------------  2  ------------------------->
+<!--  <center>-->
+<!--    <div class="spinner">-->
+<!--      <center>-->
+<!--        <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"-->
+<!--             y="0px" width="60px" height="60px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">-->
+<!--  <path opacity="0.2" fill="#000"-->
+<!--        d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946-->
+<!--  s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634-->
+<!--  c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z" />-->
+<!--          <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0-->
+<!--  C22.32,8.481,24.301,9.057,26.013,10.047z">-->
+<!--  <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20"-->
+<!--                    dur="0.5s" repeatCount="indefinite" />-->
+<!--  </path>-->
+<!--  </svg>-->
+<!--      </center>-->
+<!--    </div>-->
+<!--  </center>-->
+
+<!--------------------------  3  ------------------------->
+<!--<center>-->
+
+<!--</center>-->
+<!--  <center class="spinner">-->
+<!--    <div>-->
+<!--      <h1>-->
+<!--        لطفا کمی صبر کنید-->
+<!--      </h1>-->
+<!--    </div>-->
+<!--    <div class="center">-->
+<!--      <div class="sk-chase">-->
+<!--        <div class="sk-chase-dot"></div>-->
+<!--        <div class="sk-chase-dot"></div>-->
+<!--        <div class="sk-chase-dot"></div>-->
+<!--        <div class="sk-chase-dot"></div>-->
+<!--        <div class="sk-chase-dot"></div>-->
+<!--        <div class="sk-chase-dot"></div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </center>-->
+<!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+<!--    <script>-->
+<!--        if ('serviceWorker' in navigator) {-->
+<!--            window.addEventListener('load', function() {-->
+<!--                navigator.serviceWorker.register('flutter_service_worker.js');-->
+<!--            });-->
+<!--        }-->
+<!--    </script>-->
+<!--    <script src="main.dart.js" type="application/javascript"></script>-->
+
+
+<!--    <script>-->
+<!--     window.addEventListener('flutter-first-frame', function () {-->
+<!--       var el = document.getElementsByClassName('spinner')[0];-->
+<!--       el.remove();-->
+<!--     });-->
+<!--    </script>-->
+<!------------------------------ end added -------------------------------->
+
+
+<!------------------------------ added -------------------------------->
+<style>
+    body {
+      background-color: #09619f;
+    }
+</style>
+
+<!-- Cookie notice -->
+<div>
+  <style>
+      #cookie-notice {
+        background-color: #fff;
+        bottom: 0;
+        box-shadow: 0px 8px 24px rgba(0, 0, 0, .25);
+        -webkit-box-direction: normal;
+        -webkit-font-smoothing: antialiased;
+        display: none;
+        left: 0;
+        opacity: 0;
+        padding: 40px 0;
+        position: fixed;
+        width: 100%;
+        z-index: 11;
+      }
+
+      #cookie-notice.show {
+        animation-delay: .2s;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        animation-name: fadein;
+        animation-timing-function: cubic-bezier(.27, .89, .39, .95);
+        display: block;
+      }
+
+      @keyframes fadein {
+        0% {
+          opacity: 0
+        }
+
+        to {
+          opacity: 1
+        }
+      }
+
+      .container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 1px;
+        margin: 0 auto;
+        max-width: calc(1280px - 100px);
+        width: calc(100% - 24px*2);
+      }
+
+      .container p {
+        max-width: 1200px;
+        margin: 0;
+        margin-right: 50px;
+        color: #4a4a4a;
+        font-size: 16px;
+        font-family: "Roboto", sans-serif;
+        line-height: 1.5;
+
+      }
+
+      p a {
+        color: #0468d7;
+        text-decoration: none;
+      }
+
+      button {
+        background-color: #09619f;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        border: 0 solid;
+        border-radius: 24px;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: "Google Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        height: 40px;
+        padding: 0 32px;
+        text-align: center;
+        line-height: 1.15;
+      }
+    </style>
+  <section id="cookie-notice">
+    <div class="container">
+      <p>کاربر عزیز برای داشتن تجربه بهتر میتوانیید از اپلیکشن اندروید ما استفاده کنید
+        <a href="" target="_blank" rel="noopener">دانلود نسخه اندروید</a>.
+<!--        <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener">Learn more</a>.-->
+      </p>
+      <button id="cookie-consent">متوجه شدم</button>
+    </div>
+  </section>
+</div>
+<script>
+    function _setCookie(name, value) {
+<!--      const expires = "; expires=2147483647"; // ~2038 i.e. until user clears cookies-->
+<!--      document.cookie = name + "=" + (value || "") + expires + "; SameSite=Strict";-->
+    }
+
+    function _getCookie(name) {
+<!--      var nameEQ = name + "=";-->
+<!--      var ca = document.cookie.split(';');-->
+<!--      for (var i = 0; i < ca.length; i++) {-->
+<!--        var c = ca[i];-->
+<!--        while (c.charAt(0) == ' ') c = c.substring(1, c.length);-->
+<!--        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);-->
+<!--      }-->
+<!--      return null;-->
+    }
+
+    function initCookieNotice() {
+      const notice = document.getElementById('cookie-notice');
+      const consentBtn = document.getElementById('cookie-consent');
+      const cookieKey = 'cookie-consent';
+      const cookieConsentValue = 'true'
+      const activeClass = 'show';
+<!--      if (_getCookie(cookieKey) === cookieConsentValue) {-->
+<!--        return;-->
+<!--      }-->
+      notice.classList.add(activeClass);
+      consentBtn.classList.add(activeClass);
+      consentBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        _setCookie(cookieKey, cookieConsentValue);
+        notice.classList.remove(activeClass);
+        consentBtn.classList.add(activeClass);
+      });
+    }
+
+    initCookieNotice();
+  </script>
+
+<!-- Loading indicator -->
+<div id="loading">
+  <style>
+      body {
+        inset: 0;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+      }
+
+      #loading {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        width: 100%;
+      }
+
+      #loading img {
+        animation: 1s ease-in-out 0s infinite alternate breathe;
+        opacity: 1;
+        transition: opacity .4s;
+      }
+
+      #loading.main_done img {
+        opacity: 1;
+      }
+
+      #loading.init_done img {
+        animation: .33s ease-in-out 0s 1 forwards zooooom;
+        opacity: .05;
+      }
+
+      @keyframes breathe {
+        from {
+          transform: scale(1)
+        }
+
+        to {
+          transform: scale(0.95)
+        }
+      }
+
+      @keyframes zooooom {
+        from {
+          transform: scale(1)
+        }
+
+        to {
+          transform: scale(10)
+        }
+      }
+    </style>
+  <img src="icons/Icon-192.png" alt="Loading indicator..." />
+</div>
+<!------------------------------ end added -------------------------------->
+
+
+  <script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
